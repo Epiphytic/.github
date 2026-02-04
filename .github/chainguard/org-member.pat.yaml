@@ -12,6 +12,9 @@ required_org: Epiphytic
 # Note: Only permissions configured on the GitHub App can be requested
 permissions:
   contents: read
+  actions: read
+  issues: read
+  pull_requests: read
 
 # Empty repositories list = access to all repos where app is installed
 repositories: []
