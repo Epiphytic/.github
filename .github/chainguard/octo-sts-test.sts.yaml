@@ -18,8 +18,7 @@ permissions:
   actions: read
 
 # ALLOWED repositories - only these can be accessed
+# Note: The GitHub App must be installed on these repos
 repositories:
   # Test access to octo-sts-rust repo
   - octo-sts-rust
-  # Test access to another repo
-  - gear
