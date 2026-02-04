@@ -1,0 +1,25 @@
+# Trust policy for testing octo-sts-rust
+# Used for testing the Cloudflare Workers STS deployment
+#
+# Usage in GitHub Actions:
+#   Exchange OIDC token at https://octo-sts.liam-helmer-428.workers.dev/sts/exchange
+#   with scope: epiphytic, identity: octo-sts-test
+
+issuer: https://token.actions.githubusercontent.com
+
+# Match only workflows from the .github repository
+subject_pattern: "^repo:Epiphytic/\\.github:.*$"
+
+# Permissions for testing
+permissions:
+  # Read repository contents
+  contents: read
+  # Read workflow/actions status
+  actions: read
+
+# ALLOWED repositories - only these can be accessed
+repositories:
+  # Test access to octo-sts-rust repo
+  - octo-sts-rust
+  # Test access to another repo
+  - gear
