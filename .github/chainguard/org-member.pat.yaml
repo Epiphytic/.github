@@ -8,8 +8,7 @@
 # Required org membership
 required_org: Epiphytic
 
-# Permissions granted to org members
-# Full developer permissions as requested
+# Full developer permissions for org members
 permissions:
   contents: write
   actions: write
@@ -24,6 +23,8 @@ permissions:
   secrets: write
   variables: write
   pages: write
+  discussions: write
+  security_events: write
 
 # Empty repositories list = access to all repos where app is installed
 repositories: []
