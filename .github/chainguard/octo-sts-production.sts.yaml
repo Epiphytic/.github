@@ -1,0 +1,21 @@
+# Production trust policy for octo-sts-rust
+# Used for testing the production Cloudflare Workers deployment
+#
+# Usage in GitHub Actions:
+#   Exchange OIDC token at https://sts.epiphytic.org/sts/exchange
+#   with scope: Epiphytic/.github, identity: octo-sts-production
+
+issuer: https://token.actions.githubusercontent.com
+
+# Match only workflows from the .github repository
+subject_pattern: "^repo:Epiphytic/\\.github:.*$"
+
+# Permissions for testing
+permissions:
+  contents: read
+  actions: read
+
+# ALLOWED repositories
+repositories:
+  - octo-sts-rust
+  - gear
