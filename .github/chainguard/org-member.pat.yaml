@@ -8,23 +8,13 @@
 # Required org membership
 required_org: Epiphytic
 
-# Full developer permissions for org members
+# Permissions granted to org members
+# Only permissions configured on the GitHub App can be requested
 permissions:
   contents: write
-  actions: write
+  actions: read
   issues: write
   pull_requests: write
-  checks: write
-  statuses: write
-  deployments: write
-  packages: write
-  workflows: write
-  environments: write
-  secrets: write
-  variables: write
-  pages: write
-  discussions: write
-  security_events: write
 
 # Empty repositories list = access to all repos where app is installed
 repositories: []
