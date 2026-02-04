@@ -1,0 +1,33 @@
+# PAT trust policy for Epiphytic org members
+# Allows org members to exchange their GitHub PAT for scoped installation tokens
+#
+# Usage:
+#   curl -X POST "https://sts.epiphytic.org/sts/exchange/pat?scope=Epiphytic/.github&identity=org-member" \
+#     -H "Authorization: Bearer $(gh auth token)"
+
+# Required org membership
+required_org: Epiphytic
+
+# Permissions granted to org members
+permissions:
+  # Repository permissions
+  contents: write
+  pull_requests: write
+  issues: write
+  checks: write
+  statuses: write
+  actions: write
+  deployments: write
+  environments: write
+  pages: write
+  packages: write
+  discussions: write
+  security_events: write
+  secret_scanning_alerts: write
+  dependabot_secrets: write
+  secrets: write
+  variables: write
+  workflows: write
+
+# Empty repositories list = access to all repos where app is installed
+repositories: []
