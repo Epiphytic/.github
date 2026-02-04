@@ -9,12 +9,16 @@
 required_org: Epiphytic
 
 # Permissions granted to org members
-# Write permissions for common development tasks
+# Full developer permissions as requested
 permissions:
   contents: write
-  actions: read
+  actions: write
   issues: write
   pull_requests: write
+  checks: write
+  statuses: write
+  deployments: write
+  packages: write
 
 # Empty repositories list = access to all repos where app is installed
 repositories: []
