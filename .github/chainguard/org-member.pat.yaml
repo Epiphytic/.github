@@ -9,12 +9,12 @@
 required_org: Epiphytic
 
 # Permissions granted to org members
-# Note: Only permissions configured on the GitHub App can be requested
+# Write permissions for common development tasks
 permissions:
-  contents: read
+  contents: write
   actions: read
-  issues: read
-  pull_requests: read
+  issues: write
+  pull_requests: write
 
 # Empty repositories list = access to all repos where app is installed
 repositories: []
