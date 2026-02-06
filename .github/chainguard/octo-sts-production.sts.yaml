@@ -7,8 +7,8 @@
 
 issuer: https://token.actions.githubusercontent.com
 
-# Match only workflows from the .github repository
-subject_pattern: "^repo:Epiphytic/\\.github:.*$"
+# Match workflows from the octo-sts-rust repository
+subject_pattern: "^repo:Epiphytic/octo-sts-rust:.*$"
 
 # Permissions for testing
 permissions:
