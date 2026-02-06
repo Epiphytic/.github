@@ -3,12 +3,12 @@
 #
 # Usage in GitHub Actions:
 #   Exchange OIDC token at https://octo-sts.liam-helmer-428.workers.dev/sts/exchange
-#   with scope: epiphytic, identity: octo-sts-test
+#   with scope: Epiphytic/.github, identity: octo-sts-test
 
 issuer: https://token.actions.githubusercontent.com
 
-# Match only workflows from the .github repository
-subject_pattern: "^repo:Epiphytic/\\.github:.*$"
+# Match workflows from the octo-sts-rust repository
+subject_pattern: "^repo:Epiphytic/octo-sts-rust:.*$"
 
 # Permissions for testing
 permissions:
