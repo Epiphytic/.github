@@ -1,0 +1,21 @@
+# Trust policy for badal-io/devex-backstage-mly9n to pull octo-sts-rust packages
+# Allows the deploy workflow to pull container images from GHCR
+#
+# Usage in GitHub Actions:
+#   - uses: badal-io/devex-reusable-workflows/.github/actions/octo-sts/token@main
+#     with:
+#       scope: epiphytic
+#       identity: octo-sts-rust-packages
+
+issuer: https://token.actions.githubusercontent.com
+
+# Match only workflows from badal-io/devex-backstage-mly9n repository
+subject_pattern: "^repo:badal-io/devex-backstage-mly9n:.*$"
+
+# Permissions needed to pull container images from GHCR
+permissions:
+  packages: read
+
+# ALLOWED repositories
+repositories:
+  - octo-sts-rust
