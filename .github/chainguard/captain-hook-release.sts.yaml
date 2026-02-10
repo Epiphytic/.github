@@ -1,0 +1,6 @@
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: "^repo:Epiphytic/captain-hook:.*$"
+permissions:
+  contents: write
+repositories:
+  - plugin-marketplace
