@@ -1,5 +1,5 @@
 issuer: https://token.actions.githubusercontent.com
-subject_pattern: "^repo:Epiphytic/captain-hook:.*$"
+subject_pattern: "^repo:Epiphytic/hookwise:.*$"
 permissions:
   contents: write
 repositories:
