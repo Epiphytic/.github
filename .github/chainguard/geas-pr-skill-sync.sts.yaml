@@ -1,6 +1,6 @@
 # Protected-main Geas workflow_run identity for same-repository PR skill write-back.
 issuer: https://token.actions.githubusercontent.com
-subject: repo:Epiphytic/geas:ref:refs/heads/main
+subject: repo:Epiphytic@228616596/geas@1320458746:ref:refs/heads/main
 claim_patterns:
   repository_id: '1320458746'
   event_name: workflow_run
